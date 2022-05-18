@@ -1,0 +1,94 @@
+<!-- extending or inheriting reusable code from basic.html file -->
+{% extends 'shop/basic.html' %}
+{% block css %}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif}.container2{background-color: rgb(232, 242, 245);padding: 50px 40px 20px;margin-top: 20px;margin-bottom: 20px;overflow: hidden;box-shadow: 5px 5px 25px #a7a7a7}.tag{text-align: center;font-size: 1.1rem}.fa-heart{color: rgba(255, 230, 0, 0.959);font-size: 30px}.card{height: 320px;padding: 10px 20px;border: none;box-shadow: -1px 3px 5px #a7a7a7}.testimonial{font-size: 0.9rem;line-height: 1.4rem;font-weight: 500}.active-star{color: #FBC02D;margin-bottom: 8px}.active-star:hover{color: #F9A825;cursor: pointer}.profile{padding-top: 10px}.name{font-weight: 700}.designation{font-size: 0.84rem;font-weight: 600}.owl-carousel{margin-bottom: 15px}.owl-carousel .owl-stage-outer{padding: 40px 10px;height: 380px}.owl-carousel .owl-item img{width: 45px !important;height: 45px;border-radius: 50%;object-fit: cover}.owl-theme .owl-nav [class*='owl-']{border-radius: 50% !important;background: inherit !important;border: 3px solid #bbb;color: #bbb !important}.owl-theme .owl-nav [class*='owl-']:hover{border: 3px solid #1010ca;color: #1010ca !important}@media(max-width: 575.5px){.container{margin: 0px;padding: 20px}}
+{% endblock %}
+
+{% block title %} About Us {% endblock %}
+
+{% block body %}
+
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1 class="display-3" style="color: #0400ff;">ShopCart</h1>
+      <h1 style="color: green;">Biggest Purchase Online</h1>
+  <p style="color: #6a510b;">We specialize in qulaity products and secure delivery</p>
+      <p><a class="btn btn-primary btn-lg" href="/shop/" role="button">Visit our website</a></p>
+    </div>
+  </div>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script> <div class="container2 rounded"> <div class="d-flex justify-content-center fas fa-heart"></div> <p class="tag">Our customers love</p> <h1 class="text-primary text-center head">What we do</h1> <div class="owl-carousel owl-theme"> <div class="owl-item"> <div class="card d-flex flex-column"> <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div> <div class="main font-weight-bold pb-2 pt-1">Great Service</div> <div class="testimonial">  I loved that product very very much. It is a wonderful multi colour dress from Harpa manufacturers provided by ShopCart. </div> <div class="d-flex flex-row profile pt-4 mt-auto"> <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> <div class="d-flex flex-column pl-2"> <div class="name">Anshul Sharma</div> <p class="text-muted designation">Customer</p> </div> </div> </div> </div> <div class="owl-item"> <div class="card d-flex flex-column"> <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div> <div class="main font-weight-bold pb-2 pt-1">Great Service</div> <div class="testimonial"> The dress has zipper in it and quite comfortable. </div> <div class="d-flex flex-row profile pt-4 mt-auto"> <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> <div class="d-flex flex-column pl-2"> <div class="name">Rahul Sharma</div> <p class="text-muted designation">Customer</p> </div> </div> </div> </div> <div class="owl-item"> <div class="card d-flex flex-column"> <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div> <div class="main font-weight-bold pb-2 pt-1">Great Service</div> <div class="testimonial"> I wore it in summers and winters too with a woolen sweater because of the material quality was too good. </div> <div class="d-flex flex-row profile pt-4 mt-auto"> <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> <div class="d-flex flex-column pl-2"> <div class="name">Rishabh Gupta</div> <p class="text-muted designation">Customer</p> </div> </div> </div> </div> <div class="owl-item"> <div class="card d-flex flex-column"> <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div> <div class="main font-weight-bold pb-2 pt-1">Great Service</div> <div class="testimonial"> The products were received on time and were of top quality. Thank you shocrt for such amazing services. </div> <div class="d-flex flex-row profile pt-4 mt-auto"> <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> <div class="d-flex flex-column pl-2"> <div class="name">Preeti Kumari</div> <p class="text-muted designation">Customer</p> </div> </div> </div> </div> <div class="owl-item"> <div class="card d-flex flex-column"> <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div> <div class="main font-weight-bold pb-2 pt-1">Great Service</div> <div class="testimonial"> The products were received on time and were of top quality. Thank you shocrt for such amazing services. </div> <div class="d-flex flex-row profile pt-4 mt-auto"> <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> <div class="d-flex flex-column pl-2"> <div class="name">Megan</div> <p class="text-muted designation">Customer</p> </div> </div> </div> </div> </div> </div>
+<br>
+  <br>
+  <br>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4 text-center" >
+        <h2>Address</h2>
+        <i class="fa fa-map-marker" style="font-size:24px" aria-hidden="true"></i>
+        <br>
+        <h6 style="color:#189d16"> Sector 22, Mohali, Punjab</h6>
+        <p><a class="btn btn-secondary" href="#" role="button">click here</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h2>Phone</h2>
+        <i class="fa fa-phone" style="font-size:24px" aria-hidden="true"></i>
+        <br>
+        <h6 style="color:#189d16"> +919999788999, +919856985698</h6>
+        <p><a class="btn btn-secondary" href="#" role="button">click here</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h2>Email</h2>
+        <i class="fa fa-envelope" style="font-size:24px" aria-hidden="true"></i>
+        <br>
+        <h6 style="color:#189d16">shopcart@gmail.com</h6>
+        <p><a class="btn btn-secondary" href="#" role="button">click here</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
+</html>
+
+
+{% endblock %}
+
+{% block js %}
+<script>
+  $(document).ready(function () {
+    var silder = $(".owl-carousel");
+    silder.owlCarousel({
+        autoPlay: false,
+        items: 1,
+        center: false,
+        nav: true,
+        margin: 40,
+        dots: false,
+        loop: true,
+        navText: ["<i class='fa fa-arrow-left' aria-hidden='true'></i>", "<i class='fa fa-arrow-right' aria-hidden='true'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            575: { items: 1 },
+            768: { items: 2 },
+            991: { items: 3 },
+            1200: { items: 4 }
+        }
+    });
+});
+</script>
+{% endblock %}
